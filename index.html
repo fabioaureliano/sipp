@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIPP - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles-login.css">
+    <link rel="icon" href="imagens/finch_vert_logo.png" /> 
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<br>
+
+<body style="background-image:url(/imagens/Slide3.png)";>
+    <script src="js/scripts.js"></script>
+
+    <header>
+    <p>
+        <img src ="imagens/finch_horiz_logo.png" alt ="Logo da Finch"/>
+    </p>
+    <br>
+    <p>
+        <h3>SIPP - Sistema Integrado de Precificação e Proposta</h3> 
+        <!-- <h3>Validar Proposta Comercial</h3>  -->
+    </p>
+</header>
+
+<br>
+
+
+<main>
+<form class=""  name="TelaLogin" method="post" action="login.aspx"></form>
+
+<!-- <script>
+     function log(){
+    var email = document.querySelector("#username").value;
+    if(email == ""){
+        alert("Insira o seu endereço de e-mail para logar")   
+    }
+  }
+</script> -->
+
+<!-- <h4>Detalhes de login</h4>  -->
+
+<div class="login">
+    <form action="logar" method="POST" id="log">  
+        <p>
+            <label for ="uname">ID de usuário</label>
+            <input type="email" class="form-control" id="username" placeholder="email@exemplo.com.br" onblur="log()" required/>
+        </p>     
+        <br>
+        <!-- <p>
+            <label for ="pwd">Senha usuário</label>
+            <input id="password" type="password" class="form-control" placeholder="Senha" required/>
+        </p>  -->
+           
+    </form>
+        
+        <a href="precificar.html">
+            <input type="submit" value="Entrar"class="btn btn-primary" name="btn-logar" id="btn-login" onclick="log()">
+        </a>
+</div>
+
+<br>
+
+<div>
+    <script>
+        try {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", 'https://manager.people.com.ai/webchat-script/api/peoplechat/8f146d6c-85da-4b12-a68b-651ee155c366', false);
+            xmlHttp.send(null);
+            var response = JSON.parse(xmlHttp.responseText);
+            var scriptElement = document.createElement('script');
+
+            eval(response.content.replace(/textToReplace.people/g, "chat.people"));
+          } catch (error) {
+            console.error(error)
+          }
+    </script>
+</div>
+
+
+<!-- 
+<script>
+    function login(){
+    var usuario = document.querySelector("#username").value;
+     var fabio = "fabioaureliano@finchsolucoes.com.br";
+     var daniel = "danielcorrea@finchsolucoes.com.br";
+     var claudio = "claudioleite@finchsolucoes.com.br";
+     var ricardo = "ricardolapa@finchsolucoes.com.br";
+     var nome = "";
+
+     if(usuario = fabio){
+         var nome = "Fabio Aureliano"
+         alert("Bem-Vindo " + nome)
+     }else {
+         var nome = "";
+     }
+     
+     if(usuario = daniel){
+         var nome = "Daniel Correa"
+         alert("Bem-Vindo " + nome)
+     };
+
+    
+
+
+     console.log(nome);
+    };
+</script> -->
+
+
+
+</main>   
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer>
+        <p>Desenvolvido por: Fabio Aureliano fev 2020 v1.0</p>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="plugins/jquery.mask.min.js"></script>
+    
+</body>
+</html>
+
